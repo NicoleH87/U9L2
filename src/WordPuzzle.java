@@ -1,17 +1,32 @@
 public class WordPuzzle {
     int time;
     boolean hard;
-    int words;
+    int wordNum;
 
     public WordPuzzle(int time, boolean hard, int words)
     {
         time = this.time;
         hard = this.hard;
-        words = this.words;
+        wordNum = words;
     }
 
     public void guess()
     {
-        System.out.println("Your guess has been entered");
+        System.out.println("You have made a guess.");
+    }
+
+    public int getTime()
+    {
+        return time;
+    }
+
+    public boolean getHardness()
+    {
+        return hard;
+    }
+
+    public int getWordNum()
+    {
+        return wordNum;
     }
 }
